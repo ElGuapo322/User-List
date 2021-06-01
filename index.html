@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <h1>Список юзеров</h1>
+    <main>
+      <div id="titles">
+        <div id="sort-button" class="tablet-title">Полное имя</div>
+
+        <div class="tablet-title">Номер телефона</div>
+
+        <div id="sort-email-btn" class="tablet-title">Электронная почта</div>
+
+        <div class="tablet-title">Адрес</div>
+
+        <div id="buttons">
+          <div id="add-button">
+            <div id="add-plus">
+              <svg
+                width="11"
+                height="11"
+                viewBox="0 0 11 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.1818 4.6363H6.36366V0.818115H3.81818V4.6363H0V7.18178H3.81818V11H6.36366V7.18178H10.1818V4.6363Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+            <div id="add-head">
+              <svg
+                width="11"
+                height="11"
+                viewBox="0 0 11 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.81819 10.1818C8.63094 10.1818 10.9091 7.89732 10.9091 5.09095C10.9091 2.2782 8.63088 0 5.81819 0C3.0055 0 0.727295 2.2782 0.727295 5.09089C0.727235 7.89726 3.00544 10.1818 5.81819 10.1818Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+            <div id="add-body">
+              <svg
+                width="21"
+                height="9"
+                viewBox="0 0 21 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.8182 0.727295C7.4264 0.727295 0.636353 2.42639 0.636353 5.81819V8.36366H21V5.81819C21 2.42639 14.21 0.727295 10.8182 0.727295Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="app"></div>
+    <div id="AddModal" class="modal">
+      <div class="modal-content">
+        <div class="close">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.225052 1.33476C-0.0750172 1.03477 -0.0750172 0.535478 0.225052 0.224995C0.535612 -0.0749984 1.02454 -0.0749984 1.3351 0.224995L7.99607 6.89548L14.6682 0.224995C14.9683 -0.0749984 15.4677 -0.0749984 15.7671 0.224995C16.0776 0.535478 16.0776 1.03547 15.7671 1.33476L9.10611 7.99475L15.7671 14.6652C16.0776 14.9652 16.0776 15.4645 15.7671 15.775C15.467 16.075 14.9676 16.075 14.6682 15.775L7.99607 9.10452L1.3351 15.775C1.02454 16.075 0.535612 16.075 0.225052 15.775C-0.0750172 15.4645 -0.0750172 14.9645 0.225052 14.6652L6.88602 7.99475L0.225052 1.33476Z"
+              fill="black"
+            />
+          </svg>
+        </div>
+        <form>
+          <h2>Создать Юзера</h2>
+          <input id="add-inp-name" class="inputs" placeholder="   Имя" />
+          <input
+            id="add-inp-second-name"
+            class="inputs"
+            placeholder="   Фамилия"
+          />
+          <input id="add-inp-tph" class="inputs" placeholder="   Телефон" />
+          <input id="add-inp-email" class="inputs" placeholder="   Email" />
+          <input id="add-inp-street" class="inputs" placeholder="   Улица" />
+          <input id="add-inp-city" class="inputs" placeholder="   Город" />
+          <input
+            id="add-submit"
+            class="inputs-sub"
+            type="submit"
+            value="Сохранить"
+          />
+        </form>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+body {
+  font-family: Roboto;
+}
+h1 {
+  margin-left: 10%;
+}
+main {
+  margin-top: 5%;
+  margin-right: 10%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 80%;
+  justify-content: space-between;
+}
+#titles {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  width: 100%;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: row;
+  width: 8%;
+  justify-content: flex-end;
+}
+#add-button {
+  position: relative;
+
+  width: 28px;
+  height: 21px;
+}
+#add-plus {
+  position: absolute;
+  left: 0%;
+}
+#add-head {
+  position: absolute;
+  left: 50%;
+  top: -15%;
+}
+#add-body {
+  position: absolute;
+  left: 30%;
+  top: 35%;
+}
+#name {
+  width: 23%;
+}
+#number {
+  width: 23%;
+}
+#email {
+  width: 23%;
+}
+#adress {
+  width: 23%;
+}
+.tablet-title {
+  color: gray;
+  width: 22%;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-left: 35%;
+
+  border-radius: 4px;
+}
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  align-self: flex-end;
+  padding-right: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+  align-items: center;
+}
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 85%;
+  border: 1px solid;
+  width: 35%;
+  border-radius: 4px;
+  padding-bottom: 20px;
+}
+.inputs {
+  width: 70%;
+  height: 48px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.inputs-sub {
+  width: 71%;
+  height: 48px;
+  color: white;
+  background-color: #1baec2;
+  border-radius: 4px;
+  border-color: #1baec2;
+}
+.rows {
+  display: flex;
+  width: 100%;
+}
+.row {
+  font-weight: bold;
+  height: 70px;
+  width: 22%;
+}
+.row-buttons {
+  width: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.change-button {
+  background: url(https://sun9-57.userapi.com/impg/006seIUTj1qU3iI5l15PbXMoEXaz1Hu79F-ipQ/oEFnfjleGAo.jpg?size=20x20&quality=96&proxy=1&sign=b8927f635c05e24bf554b2e6102f8ec9&type=album);
+  height: 20px;
+  width: 20px;
+}
+.delete-button {
+  background: url(https://sun9-19.userapi.com/impg/oCR2h0YAtCkOCiQBWbrSRDpt0Jjdgb-6hZ5ouQ/ncY33-aWiVE.jpg?size=20x20&quality=96&proxy=1&sign=c1fb9f4df4d9290f0ddd6860837d28be&type=album);
+  height: 20px;
+  width: 20px;
+}
+.delModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-left: 35%;
+  border-radius: 4px;
+}
+.delModalContent {
+  padding-top: 10px;
+  display: flex;
+  color: #000000, 50%;
+  flex-direction: column;
+  background-color: white;
+  height: 54px;
+  border: 1px solid;
+  width: 220px;
+  border-radius: 4px;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20%;
+  margin-left: 7%;
+}
+.modal-del-buttons {
+  margin-top: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60%;
+}
+.del-confirm {
+  background: url(https://sun9-3.userapi.com/impg/OA0D_nNftUsV61l9N7aUWJ87y7ZvdUGfcUF7Wg/hBFwZvznTA0.jpg?size=16x12&quality=96&proxy=1&sign=cce60b66179f0fc4cf3fbe021a1e258f&type=album);
+  background-size: cover;
+  height: 30px;
+  width: 40px;
+}
+.del-denied {
+  background: url(https://sun9-42.userapi.com/impg/AQ9cIBmnYepktdBUT584vtNVvJmVXWaDQc-NmQ/zMpjbS0UdLg.jpg?size=12x12&quality=96&proxy=1&sign=4f4bed8826b8d57ba5785a8052e21201&type=album://vk.com/im?peers=211224400_170255532_c142&sel=44980407&z=photo44980407_457251117%2Fmail8921237);
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+}
+div [data-confirm="1"] {
+  background: url(https://sun9-3.userapi.com/impg/OA0D_nNftUsV61l9N7aUWJ87y7ZvdUGfcUF7Wg/hBFwZvznTA0.jpg?size=16x12&quality=96&proxy=1&sign=cce60b66179f0fc4cf3fbe021a1e258f&type=album);
+  background-size: cover;
+  height: 30px;
+  width: 40px;
+}
+@media screen and (max-width: 768px) {
+  main {
+    width: 93%;
+    margin-left: 5%;
+  }
+  h1 {
+    margin-left: 5%;
+  }
+  .modal-content {
+    height: 60%;
+    margin-top: 70px;
+  }
+  .delModalContent {
+    margin-top: 45%;
+    margin-left: 5%;
+  }
+  .rows {
+    font-size: 12px;
+  }
+}
